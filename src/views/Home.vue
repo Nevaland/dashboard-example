@@ -130,6 +130,16 @@
               </v-list>
             </v-card>
           </v-col>
+          <v-col cols="12" sm="4">
+            <v-card color="grey darken-3" align="center">
+              <v-date-picker
+                v-model="date2"
+                :event-color="(date) => (date[9] % 2 ? 'red' : 'yellow')"
+                :events="functionEvents"
+                no-title
+              ></v-date-picker>
+            </v-card>
+          </v-col>
         </v-row>
       </v-container>
     </div>
