@@ -194,7 +194,7 @@ export default {
       return d.toISOString().substr(0, 10);
     });
   },
-  method: {
+  methods: {
     functionEvents(date) {
       const [, , day] = date.split("-");
       if ([12, 17, 28].includes(parseInt(day, 10))) return true;
