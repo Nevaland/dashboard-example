@@ -26,7 +26,7 @@ export default {
       { text: "DASHBOARD", icon: "mdi-view-dashboard" },
       { text: "PROJECTS", icon: "mdi-briefcase-check" },
       { text: "MY TASK", icon: "mdi-menu" },
-      { text: "CALENDAR", icon: "mdi-calender" },
+      { text: "CALENDAR", icon: "mdi-calendar" },
       { text: "TIME MANAGE", icon: "mdi-chart-pie" },
       { text: "REPORTS", icon: "mdi-view-dashboard" },
       { text: "SETTINGS", icon: "mdi-cog-outline" },
