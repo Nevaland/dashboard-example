@@ -88,6 +88,11 @@
                   +5
                 </v-avatar>
               </v-app-bar>
+              <v-app-bar flat color="rgba(0,0,0,0)" class="mt-n8">
+                <v-btn color="red darken-2" small text>
+                  DUEDATE: 20 JUNE
+                </v-btn>
+              </v-app-bar>
             </v-card>
           </v-col>
           <v-col cols="12" sm="4">
