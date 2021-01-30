@@ -52,7 +52,6 @@
                 >
                 <v-btn color="blue" small text>UI/UX</v-btn>
               </v-app-bar>
-
               <v-app-bar flat color="rgba(0,0,0,0)" class="mt-n7">
                 <v-avatar size="30">
                   <img
@@ -95,6 +94,7 @@
               </v-app-bar>
             </v-card>
           </v-col>
+
           <v-col cols="12" sm="4">
             <v-card color="grey darken-3" align="center">
               <v-app-bar flat color="rgba(0,0,0,0)">
@@ -135,6 +135,7 @@
               </v-list>
             </v-card>
           </v-col>
+
           <v-col cols="12" sm="4">
             <v-card color="grey darken-3" align="center">
               <v-date-picker
@@ -145,6 +146,7 @@
               ></v-date-picker>
             </v-card>
           </v-col>
+
           <v-col cols="12" sm="4">
             <v-card color="grey darken-3">
               <v-app-bar flat color="rgba(0,0,0,0)">
@@ -183,7 +185,6 @@
                 >
                 <v-btn color="yellow darken-2" small text>ANDROID</v-btn>
               </v-app-bar>
-
               <v-app-bar flat color="rgba(0,0,0,0)" class="mt-n7">
                 <v-avatar size="30">
                   <img
@@ -224,6 +225,56 @@
                   DUEDATE: 20 JUNE
                 </v-btn>
               </v-app-bar>
+            </v-card>
+          </v-col>
+
+          <v-col cols="12" sm="4">
+            <v-card color="grey darken-3" align="center" class="pb-6">
+              <v-app-bar flat color="rgba(0,0,0,0)">
+                <v-toolbar-title class="title white--text pl-0 ml-2">
+                  Google
+                </v-toolbar-title>
+              </v-app-bar>
+              <v-list color="grey darken-3">
+                <v-list-item-group
+                  v-model="selected1"
+                  active-class="red--text"
+                  multiple
+                >
+                  <template v-for="(item, index) in articles">
+                    <v-list-item :key="item.title">
+                      <template v-slot:default="{ active }">
+                        <v-list-item-content>
+                          <v-list-item-title
+                            v-text="item.title"
+                          ></v-list-item-title>
+                        </v-list-item-content>
+                        <v-list-item-action>
+                          <v-spacer></v-spacer>
+                          <v-list-item-icon>
+                            <v-btn icon>
+                              <v-icon>mdi-rewind</v-icon>
+                            </v-btn>
+                            <v-icon v-if="!active" color="grey lighten-1">
+                              mdi-play
+                            </v-icon>
+                            <v-icon v-else color="yellow darken-3"
+                              >mdi-pause</v-icon
+                            >
+                            <v-btn icon>
+                              <v-icon>mdi-fast-forward</v-icon>
+                            </v-btn>
+                          </v-list-item-icon>
+                        </v-list-item-action>
+                      </template>
+                    </v-list-item>
+                    <v-divider
+                      v-if="index < articles.length - 1"
+                      :key="index"
+                    ></v-divider>
+                  </template>
+                </v-list-item-group>
+              </v-list>
             </v-card>
           </v-col>
         </v-row>
