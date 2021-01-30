@@ -145,6 +145,87 @@
               ></v-date-picker>
             </v-card>
           </v-col>
+          <v-col cols="12" sm="4">
+            <v-card color="grey darken-3">
+              <v-app-bar flat color="rgba(0,0,0,0)">
+                <v-avatar size="45" color="grey darken-2">
+                  <img src="favicon.ico" />
+                </v-avatar>
+                <v-toolbar-title class="title white--text pl1-0 ml-2">
+                  Vue2
+                </v-toolbar-title>
+                <v-spacer></v-spacer>
+                <v-btn color="whtie" outlined icon small>
+                  <v-icon color="yellow" small>mdi-star</v-icon>
+                </v-btn>
+                <v-btn color="white" icon>
+                  <v-icon>mdi-dots-vertical</v-icon>
+                </v-btn>
+              </v-app-bar>
+              <v-app-bar flat color="rgba(0,0,0,0)">
+                <v-btn color="green" small text>COMPLETED</v-btn>
+                <v-spacer></v-spacer>
+                <b-btn color="green" outlined small>MEDIUM</b-btn>
+              </v-app-bar>
+              <v-app-bar flat color="rgba(0,0,0,0)" class="mt-n4">
+                <p>Task Done: 30/30</p>
+              </v-app-bar>
+              <v-app-bar flat color="rgba(0,0,0,0)" class="mt-n10">
+                <v-progress-linear
+                  color="yellow"
+                  height="6"
+                  value="80"
+                ></v-progress-linear>
+              </v-app-bar>
+              <v-app-bar flat color="rgba(0,0,0,0)" class="mt-n10">
+                <v-btn color="green" small class="mr-2" text click
+                  >IOS APP</v-btn
+                >
+                <v-btn color="yellow darken-2" small text>ANDROID</v-btn>
+              </v-app-bar>
+
+              <v-app-bar flat color="rgba(0,0,0,0)" class="mt-n7">
+                <v-avatar size="30">
+                  <img
+                    src="https://cdn.vuetifyjs.com/images/john.jpg"
+                    alt="john"
+                  />
+                </v-avatar>
+                <v-avatar size="30" class="ml-n3">
+                  <img
+                    src="https://cdn.vuetifyjs.com/images/lists/1.jpg"
+                    alt="john"
+                  />
+                </v-avatar>
+                <v-avatar size="30" class="ml-n3">
+                  <img
+                    src="https://cdn.vuetifyjs.com/images/lists/2.jpg"
+                    alt="john"
+                  />
+                </v-avatar>
+                <v-avatar size="30" class="ml-n3">
+                  <img
+                    src="https://cdn.vuetifyjs.com/images/lists/3.jpg"
+                    alt="john"
+                  />
+                </v-avatar>
+                <v-avatar size="30" class="ml-n3">
+                  <img
+                    src="https://cdn.vuetifyjs.com/images/lists/4.jpg"
+                    alt="john"
+                  />
+                </v-avatar>
+                <v-avatar size="30" class="ml-n3" color="grey darken-2">
+                  +5
+                </v-avatar>
+              </v-app-bar>
+              <v-app-bar flat color="rgba(0,0,0,0)" class="mt-n8">
+                <v-btn color="red darken-2" small text>
+                  DUEDATE: 20 JUNE
+                </v-btn>
+              </v-app-bar>
+            </v-card>
+          </v-col>
         </v-row>
       </v-container>
     </div>
