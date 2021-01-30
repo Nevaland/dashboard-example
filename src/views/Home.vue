@@ -277,6 +277,36 @@
               </v-list>
             </v-card>
           </v-col>
+
+          <v-col cols="12" sm="4">
+            <v-card color="grey darken-3" align="center">
+              <v-app-bar color="rgba(0,0,0,0)" flat>
+                <v-toolbar-title class="title white--text pl-0 ml-2">
+                  Messages
+                </v-toolbar-title>
+              </v-app-bar>
+              <v-list subheader color="grey darken-3">
+                <v-list-item v-for="chat in recent" :key="chat.title">
+                  <v-list-item-avatar>
+                    <v-img
+                      :alt="`${chat.title} avatar`"
+                      :src="chat.avatar"
+                    ></v-img>
+                  </v-list-item-avatar>
+                  <v-list-item-content>
+                    <v-list-item-title v-text="chat.title"></v-list-item-title>
+                  </v-list-item-content>
+                  <v-list-item-icon>
+                    <v-icon
+                      :color="chat.active ? 'deep-purple accent-4' : 'grey'"
+                    >
+                      mdi-message-outline
+                    </v-icon>
+                  </v-list-item-icon>
+                </v-list-item>
+              </v-list>
+            </v-card>
+          </v-col>
         </v-row>
       </v-container>
     </div>
