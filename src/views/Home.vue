@@ -90,6 +90,46 @@
               </v-app-bar>
             </v-card>
           </v-col>
+          <v-col cols="12" sm="4">
+            <v-card color="grey darken-3" align="center">
+              <v-app-bar flat color="rgba(0,0,0,0)">
+                <v-toolbar-title class="title white--text pl-0 ml-2">
+                  My Tasks(05)
+                </v-toolbar-title>
+              </v-app-bar>
+              <v-list color="grey darken-3" class="mt-4">
+                <v-list-item-group
+                  v-model="selected"
+                  active-class="red--text"
+                  multiple
+                >
+                  <template v-for="(item, index) in items">
+                    <v-list-item :key="item.title">
+                      <template v-slot:default="{ active }">
+                        <v-list-item-content>
+                          <v-list-item-title
+                            v-text="item.title"
+                          ></v-list-item-title>
+                        </v-list-item-content>
+                        <v-list-item-action>
+                          <v-icon v-if="!active" color="grey lighten-1">
+                            mdi-star-outline
+                          </v-icon>
+                          <v-icon v-else color="yellow darken-3">
+                            mdi-star
+                          </v-icon>
+                        </v-list-item-action>
+                      </template>
+                    </v-list-item>
+                    <v-divider
+                      v-if="index < items.length - 1"
+                      :key="index"
+                    ></v-divider>
+                  </template>
+                </v-list-item-group>
+              </v-list>
+            </v-card>
+          </v-col>
         </v-row>
       </v-container>
     </div>
