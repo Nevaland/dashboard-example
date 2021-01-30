@@ -34,7 +34,7 @@
               <v-app-bar flat color="rgba(0,0,0,0)">
                 <v-btn color="grey darken-2" small>SELCT PROGRESS</v-btn>
                 <v-spacer></v-spacer>
-                <b-btn color="red" outlined small>HIGH</b-btn>
+                <v-btn color="red" outlined small>HIGH</v-btn>
               </v-app-bar>
               <v-app-bar flat color="rgba(0,0,0,0)" class="mt-n4">
                 <p>Task Done: 25/50</p>
@@ -165,7 +165,7 @@
               <v-app-bar flat color="rgba(0,0,0,0)">
                 <v-btn color="green" small text>COMPLETED</v-btn>
                 <v-spacer></v-spacer>
-                <b-btn color="green" outlined small>MEDIUM</b-btn>
+                <v-btn color="green" outlined small>MEDIUM</v-btn>
               </v-app-bar>
               <v-app-bar flat color="rgba(0,0,0,0)" class="mt-n4">
                 <p>Task Done: 30/30</p>
