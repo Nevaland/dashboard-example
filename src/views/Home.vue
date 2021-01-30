@@ -50,7 +50,7 @@
                 <v-btn color="green" small class="mr-2" text click
                   >IOS APP</v-btn
                 >
-                <v-btn color="green" small text>UI/UX</v-btn>
+                <v-btn color="blue" small text>UI/UX</v-btn>
               </v-app-bar>
 
               <v-app-bar flat color="rgba(0,0,0,0)" class="mt-n7">
